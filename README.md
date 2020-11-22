@@ -6,6 +6,9 @@ I used CosmosDB using Table API as my data needs doesn't need to be low latency 
 
 I also considered an in-application sql lite file in context of the consumer functions of this database, but didn't persue this as it does not allow future scaling in Azure of functions if the data lives with their instances rather than being persisted elsewhere.
 
+By using table api, I am paying for transactions rather than CPU and RAM.
+
 ## Good Reads
 - https://blog.siliconvalve.com/2018/12/14/cost-effective-azure-cosmos-db/
 - https://docs.microsoft.com/en-au/azure/storage/tables/table-storage-overview
+- https://www.troyhunt.com/working-with-154-million-records-on/
